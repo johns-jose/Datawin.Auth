@@ -1,0 +1,74 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DataWin.Auth.Api/DataWin.Auth.Api.csproj" />
+    <Project Path="src/DataWin.Auth.Application/DataWin.Auth.Application.csproj" />
+    <Project Path="src/DataWin.Auth.Contracts/DataWin.Auth.Contracts.csproj" />
+    <Project Path="src/DataWin.Auth.Core/DataWin.Auth.Core.csproj" />
+    <Project Path="src/DataWin.Auth.Infrastructure/DataWin.Auth.Infrastructure.csproj" />
+    <Project Path="src/DataWin.Auth.Sdk/DataWin.Auth.Sdk.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DataWin.Auth.IntegrationTests/DataWin.Auth.IntegrationTests.csproj" />
+    <Project Path="tests/DataWin.Auth.UnitTests/DataWin.Auth.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/docs/">
+    <File Path="docs/ARCHITECTURE.md" />
+    <File Path="docs/API_USAGE_GUIDE.md" />
+    <File Path="docs/SDK_INTEGRATION_GUIDE.md" />
+  </Folder>
+  <Folder Name="/database/">
+    <Folder Name="/database/catalog/">
+      <File Path="database/catalog/DATABASE_CATALOG.md" />
+    </Folder>
+    <Folder Name="/database/global/">
+      <Folder Name="/database/global/migrations/">
+        <File Path="database/global/migrations/001_create_tenants.sql" />
+        <File Path="database/global/migrations/002_create_tenant_regions.sql" />
+        <File Path="database/global/migrations/003_create_regional_endpoints.sql" />
+      </Folder>
+      <Folder Name="/database/global/stored_procedures/">
+        <File Path="database/global/stored_procedures/sp_tenant.sql" />
+      </Folder>
+      <Folder Name="/database/global/seeds/">
+        <File Path="database/global/seeds/seed_global.sql" />
+      </Folder>
+    </Folder>
+    <Folder Name="/database/regional/">
+      <Folder Name="/database/regional/migrations/">
+        <File Path="database/regional/migrations/001_create_users.sql" />
+        <File Path="database/regional/migrations/002_create_user_credentials.sql" />
+        <File Path="database/regional/migrations/003_create_user_mfa.sql" />
+        <File Path="database/regional/migrations/004_create_sessions.sql" />
+        <File Path="database/regional/migrations/005_create_refresh_tokens.sql" />
+        <File Path="database/regional/migrations/006_create_oauth_clients.sql" />
+        <File Path="database/regional/migrations/007_create_saml_configurations.sql" />
+        <File Path="database/regional/migrations/008_create_consent_records.sql" />
+        <File Path="database/regional/migrations/009_create_pii_audit_log.sql" />
+        <File Path="database/regional/migrations/010_create_data_erasure_requests.sql" />
+        <File Path="database/regional/migrations/011_create_encryption_keys.sql" />
+        <File Path="database/regional/migrations/012_create_user_external_logins.sql" />
+      </Folder>
+      <Folder Name="/database/regional/stored_procedures/">
+        <Folder Name="/database/regional/stored_procedures/auth/">
+          <File Path="database/regional/stored_procedures/auth/sp_session_token.sql" />
+        </Folder>
+        <Folder Name="/database/regional/stored_procedures/consent/">
+          <File Path="database/regional/stored_procedures/consent/sp_consent.sql" />
+        </Folder>
+        <Folder Name="/database/regional/stored_procedures/mfa/">
+          <File Path="database/regional/stored_procedures/mfa/sp_mfa.sql" />
+        </Folder>
+        <Folder Name="/database/regional/stored_procedures/privacy/">
+          <File Path="database/regional/stored_procedures/privacy/sp_privacy.sql" />
+        </Folder>
+        <Folder Name="/database/regional/stored_procedures/users/">
+          <File Path="database/regional/stored_procedures/users/sp_user.sql" />
+        </Folder>
+      </Folder>
+      <Folder Name="/database/regional/seeds/">
+        <File Path="database/regional/seeds/seed_us_east_1.sql" />
+        <File Path="database/regional/seeds/seed_eu_west_1.sql" />
+      </Folder>
+    </Folder>
+  </Folder>
+</Solution>

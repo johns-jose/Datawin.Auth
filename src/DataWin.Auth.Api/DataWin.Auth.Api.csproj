@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.13.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataWin.Auth.Core\DataWin.Auth.Core.csproj" />
+    <ProjectReference Include="..\DataWin.Auth.Application\DataWin.Auth.Application.csproj" />
+    <ProjectReference Include="..\DataWin.Auth.Infrastructure\DataWin.Auth.Infrastructure.csproj" />
+    <ProjectReference Include="..\DataWin.Auth.Contracts\DataWin.Auth.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
